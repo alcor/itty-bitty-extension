@@ -1,0 +1,948 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAC0A5FA289724CD005BD8CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0A5F9289724CD005BD8CA /* AppDelegate.swift */; };
+		EAC0A5FC289724CD005BD8CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0A5FB289724CD005BD8CA /* SceneDelegate.swift */; };
+		EAC0A5FF289724CD005BD8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5FD289724CD005BD8CA /* LaunchScreen.storyboard */; };
+		EAC0A602289724CD005BD8CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A600289724CD005BD8CA /* Main.storyboard */; };
+		EAC0A60B289724CD005BD8CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0A60A289724CD005BD8CA /* AppDelegate.swift */; };
+		EAC0A60E289724CD005BD8CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A60C289724CD005BD8CA /* Main.storyboard */; };
+		EAC0A615289724CD005BD8CA /* itty.bitty Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EAC0A614289724CD005BD8CA /* itty.bitty Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EAC0A61F289724CD005BD8CA /* itty.bitty Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EAC0A61E289724CD005BD8CA /* itty.bitty Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EAC0A625289724CD005BD8CA /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5E0289724CB005BD8CA /* Main.html */; };
+		EAC0A626289724CD005BD8CA /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5E0289724CB005BD8CA /* Main.html */; };
+		EAC0A627289724CD005BD8CA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5E2289724CB005BD8CA /* Icon.png */; };
+		EAC0A628289724CD005BD8CA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5E2289724CB005BD8CA /* Icon.png */; };
+		EAC0A629289724CD005BD8CA /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5E3289724CB005BD8CA /* Style.css */; };
+		EAC0A62A289724CD005BD8CA /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5E3289724CB005BD8CA /* Style.css */; };
+		EAC0A62B289724CD005BD8CA /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5E4289724CB005BD8CA /* Script.js */; };
+		EAC0A62C289724CD005BD8CA /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5E4289724CB005BD8CA /* Script.js */; };
+		EAC0A62D289724CD005BD8CA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0A5E5289724CB005BD8CA /* WebViewController.swift */; };
+		EAC0A62E289724CD005BD8CA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0A5E5289724CB005BD8CA /* WebViewController.swift */; };
+		EAC0A62F289724CD005BD8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5E6289724CD005BD8CA /* Assets.xcassets */; };
+		EAC0A630289724CD005BD8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5E6289724CD005BD8CA /* Assets.xcassets */; };
+		EAC0A631289724CD005BD8CA /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0A5E8289724CD005BD8CA /* SafariWebExtensionHandler.swift */; };
+		EAC0A632289724CD005BD8CA /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0A5E8289724CD005BD8CA /* SafariWebExtensionHandler.swift */; };
+		EAC0A635289724CD005BD8CA /* images in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5EB289724CD005BD8CA /* images */; };
+		EAC0A636289724CD005BD8CA /* images in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5EB289724CD005BD8CA /* images */; };
+		EAC0A637289724CD005BD8CA /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5EC289724CD005BD8CA /* manifest.json */; };
+		EAC0A638289724CD005BD8CA /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5EC289724CD005BD8CA /* manifest.json */; };
+		EAC0A639289724CD005BD8CA /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5ED289724CD005BD8CA /* background.js */; };
+		EAC0A63A289724CD005BD8CA /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5ED289724CD005BD8CA /* background.js */; };
+		EAC0A65428973A26005BD8CA /* bitty.js in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A65328973A26005BD8CA /* bitty.js */; };
+		EAC0A65528973A26005BD8CA /* bitty.js in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A65328973A26005BD8CA /* bitty.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAC0A616289724CD005BD8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC0A5DA289724CA005BD8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC0A613289724CD005BD8CA;
+			remoteInfo = "itty.bitty Extension (iOS)";
+		};
+		EAC0A620289724CD005BD8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC0A5DA289724CA005BD8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC0A61D289724CD005BD8CA;
+			remoteInfo = "itty.bitty Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAC0A648289724CD005BD8CA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EAC0A615289724CD005BD8CA /* itty.bitty Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0A64F289724CD005BD8CA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EAC0A61F289724CD005BD8CA /* itty.bitty Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EAC0A5E1289724CB005BD8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		EAC0A5E2289724CB005BD8CA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		EAC0A5E3289724CB005BD8CA /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		EAC0A5E4289724CB005BD8CA /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		EAC0A5E5289724CB005BD8CA /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		EAC0A5E6289724CD005BD8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAC0A5E8289724CD005BD8CA /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		EAC0A5EB289724CD005BD8CA /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		EAC0A5EC289724CD005BD8CA /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		EAC0A5ED289724CD005BD8CA /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		EAC0A5F6289724CD005BD8CA /* itty.bitty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itty.bitty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC0A5F9289724CD005BD8CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAC0A5FB289724CD005BD8CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EAC0A5FE289724CD005BD8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAC0A601289724CD005BD8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAC0A603289724CD005BD8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC0A608289724CD005BD8CA /* itty.bitty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itty.bitty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC0A60A289724CD005BD8CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAC0A60D289724CD005BD8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAC0A60F289724CD005BD8CA /* itty.bitty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = itty.bitty.entitlements; sourceTree = "<group>"; };
+		EAC0A614289724CD005BD8CA /* itty.bitty Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "itty.bitty Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC0A619289724CD005BD8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC0A61E289724CD005BD8CA /* itty.bitty Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "itty.bitty Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC0A623289724CD005BD8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC0A624289724CD005BD8CA /* itty.bitty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = itty.bitty.entitlements; sourceTree = "<group>"; };
+		EAC0A65328973A26005BD8CA /* bitty.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bitty.js; sourceTree = "<group>"; };
+		EAC0A65728975044005BD8CA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAC0A5F3289724CD005BD8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0A605289724CD005BD8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0A611289724CD005BD8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0A61B289724CD005BD8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAC0A5D9289724CA005BD8CA = {
+			isa = PBXGroup;
+			children = (
+				EAC0A5DE289724CB005BD8CA /* Shared (App) */,
+				EAC0A5E7289724CD005BD8CA /* Shared (Extension) */,
+				EAC0A5F8289724CD005BD8CA /* iOS (App) */,
+				EAC0A609289724CD005BD8CA /* macOS (App) */,
+				EAC0A618289724CD005BD8CA /* iOS (Extension) */,
+				EAC0A622289724CD005BD8CA /* macOS (Extension) */,
+				EAC0A5F7289724CD005BD8CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAC0A5DE289724CB005BD8CA /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0A5E5289724CB005BD8CA /* WebViewController.swift */,
+				EAC0A5E6289724CD005BD8CA /* Assets.xcassets */,
+				EAC0A5DF289724CB005BD8CA /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		EAC0A5DF289724CB005BD8CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0A5E0289724CB005BD8CA /* Main.html */,
+				EAC0A5E2289724CB005BD8CA /* Icon.png */,
+				EAC0A5E3289724CB005BD8CA /* Style.css */,
+				EAC0A5E4289724CB005BD8CA /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EAC0A5E7289724CD005BD8CA /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0A5E8289724CD005BD8CA /* SafariWebExtensionHandler.swift */,
+				EAC0A5E9289724CD005BD8CA /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		EAC0A5E9289724CD005BD8CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0A5EB289724CD005BD8CA /* images */,
+				EAC0A5EC289724CD005BD8CA /* manifest.json */,
+				EAC0A65328973A26005BD8CA /* bitty.js */,
+				EAC0A5ED289724CD005BD8CA /* background.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EAC0A5F7289724CD005BD8CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0A5F6289724CD005BD8CA /* itty.bitty.app */,
+				EAC0A608289724CD005BD8CA /* itty.bitty.app */,
+				EAC0A614289724CD005BD8CA /* itty.bitty Extension.appex */,
+				EAC0A61E289724CD005BD8CA /* itty.bitty Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAC0A5F8289724CD005BD8CA /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0A5F9289724CD005BD8CA /* AppDelegate.swift */,
+				EAC0A5FB289724CD005BD8CA /* SceneDelegate.swift */,
+				EAC0A5FD289724CD005BD8CA /* LaunchScreen.storyboard */,
+				EAC0A600289724CD005BD8CA /* Main.storyboard */,
+				EAC0A603289724CD005BD8CA /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		EAC0A609289724CD005BD8CA /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0A60A289724CD005BD8CA /* AppDelegate.swift */,
+				EAC0A60C289724CD005BD8CA /* Main.storyboard */,
+				EAC0A60F289724CD005BD8CA /* itty.bitty.entitlements */,
+				EAC0A65728975044005BD8CA /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		EAC0A618289724CD005BD8CA /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0A619289724CD005BD8CA /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		EAC0A622289724CD005BD8CA /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0A623289724CD005BD8CA /* Info.plist */,
+				EAC0A624289724CD005BD8CA /* itty.bitty.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAC0A5F5289724CD005BD8CA /* itty.bitty (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC0A649289724CD005BD8CA /* Build configuration list for PBXNativeTarget "itty.bitty (iOS)" */;
+			buildPhases = (
+				EAC0A5F2289724CD005BD8CA /* Sources */,
+				EAC0A5F3289724CD005BD8CA /* Frameworks */,
+				EAC0A5F4289724CD005BD8CA /* Resources */,
+				EAC0A648289724CD005BD8CA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC0A617289724CD005BD8CA /* PBXTargetDependency */,
+			);
+			name = "itty.bitty (iOS)";
+			productName = "itty.bitty (iOS)";
+			productReference = EAC0A5F6289724CD005BD8CA /* itty.bitty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAC0A607289724CD005BD8CA /* itty.bitty (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC0A650289724CD005BD8CA /* Build configuration list for PBXNativeTarget "itty.bitty (macOS)" */;
+			buildPhases = (
+				EAC0A604289724CD005BD8CA /* Sources */,
+				EAC0A605289724CD005BD8CA /* Frameworks */,
+				EAC0A606289724CD005BD8CA /* Resources */,
+				EAC0A64F289724CD005BD8CA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC0A621289724CD005BD8CA /* PBXTargetDependency */,
+			);
+			name = "itty.bitty (macOS)";
+			productName = "itty.bitty (macOS)";
+			productReference = EAC0A608289724CD005BD8CA /* itty.bitty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAC0A613289724CD005BD8CA /* itty.bitty Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC0A645289724CD005BD8CA /* Build configuration list for PBXNativeTarget "itty.bitty Extension (iOS)" */;
+			buildPhases = (
+				EAC0A610289724CD005BD8CA /* Sources */,
+				EAC0A611289724CD005BD8CA /* Frameworks */,
+				EAC0A612289724CD005BD8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "itty.bitty Extension (iOS)";
+			productName = "itty.bitty Extension (iOS)";
+			productReference = EAC0A614289724CD005BD8CA /* itty.bitty Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EAC0A61D289724CD005BD8CA /* itty.bitty Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC0A64C289724CD005BD8CA /* Build configuration list for PBXNativeTarget "itty.bitty Extension (macOS)" */;
+			buildPhases = (
+				EAC0A61A289724CD005BD8CA /* Sources */,
+				EAC0A61B289724CD005BD8CA /* Frameworks */,
+				EAC0A61C289724CD005BD8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "itty.bitty Extension (macOS)";
+			productName = "itty.bitty Extension (macOS)";
+			productReference = EAC0A61E289724CD005BD8CA /* itty.bitty Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAC0A5DA289724CA005BD8CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EAC0A5F5289724CD005BD8CA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					EAC0A607289724CD005BD8CA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					EAC0A613289724CD005BD8CA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					EAC0A61D289724CD005BD8CA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = EAC0A5DD289724CA005BD8CA /* Build configuration list for PBXProject "itty.bitty" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAC0A5D9289724CA005BD8CA;
+			productRefGroup = EAC0A5F7289724CD005BD8CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAC0A5F5289724CD005BD8CA /* itty.bitty (iOS) */,
+				EAC0A607289724CD005BD8CA /* itty.bitty (macOS) */,
+				EAC0A613289724CD005BD8CA /* itty.bitty Extension (iOS) */,
+				EAC0A61D289724CD005BD8CA /* itty.bitty Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAC0A5F4289724CD005BD8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0A627289724CD005BD8CA /* Icon.png in Resources */,
+				EAC0A5FF289724CD005BD8CA /* LaunchScreen.storyboard in Resources */,
+				EAC0A625289724CD005BD8CA /* Main.html in Resources */,
+				EAC0A62B289724CD005BD8CA /* Script.js in Resources */,
+				EAC0A62F289724CD005BD8CA /* Assets.xcassets in Resources */,
+				EAC0A602289724CD005BD8CA /* Main.storyboard in Resources */,
+				EAC0A629289724CD005BD8CA /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0A606289724CD005BD8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0A628289724CD005BD8CA /* Icon.png in Resources */,
+				EAC0A62A289724CD005BD8CA /* Style.css in Resources */,
+				EAC0A60E289724CD005BD8CA /* Main.storyboard in Resources */,
+				EAC0A62C289724CD005BD8CA /* Script.js in Resources */,
+				EAC0A630289724CD005BD8CA /* Assets.xcassets in Resources */,
+				EAC0A626289724CD005BD8CA /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0A612289724CD005BD8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0A639289724CD005BD8CA /* background.js in Resources */,
+				EAC0A635289724CD005BD8CA /* images in Resources */,
+				EAC0A65428973A26005BD8CA /* bitty.js in Resources */,
+				EAC0A637289724CD005BD8CA /* manifest.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0A61C289724CD005BD8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0A63A289724CD005BD8CA /* background.js in Resources */,
+				EAC0A636289724CD005BD8CA /* images in Resources */,
+				EAC0A65528973A26005BD8CA /* bitty.js in Resources */,
+				EAC0A638289724CD005BD8CA /* manifest.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAC0A5F2289724CD005BD8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0A62D289724CD005BD8CA /* WebViewController.swift in Sources */,
+				EAC0A5FA289724CD005BD8CA /* AppDelegate.swift in Sources */,
+				EAC0A5FC289724CD005BD8CA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0A604289724CD005BD8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0A62E289724CD005BD8CA /* WebViewController.swift in Sources */,
+				EAC0A60B289724CD005BD8CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0A610289724CD005BD8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0A631289724CD005BD8CA /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0A61A289724CD005BD8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0A632289724CD005BD8CA /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAC0A617289724CD005BD8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC0A613289724CD005BD8CA /* itty.bitty Extension (iOS) */;
+			targetProxy = EAC0A616289724CD005BD8CA /* PBXContainerItemProxy */;
+		};
+		EAC0A621289724CD005BD8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC0A61D289724CD005BD8CA /* itty.bitty Extension (macOS) */;
+			targetProxy = EAC0A620289724CD005BD8CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAC0A5E0289724CB005BD8CA /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC0A5E1289724CB005BD8CA /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		EAC0A5FD289724CD005BD8CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC0A5FE289724CD005BD8CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EAC0A600289724CD005BD8CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC0A601289724CD005BD8CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAC0A60C289724CD005BD8CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC0A60D289724CD005BD8CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAC0A643289724CD005BD8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAC0A644289724CD005BD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EAC0A646289724CD005BD8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7X888RRVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "itty.bitty Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blacktree.itty-bitty.Extension";
+				PRODUCT_NAME = "itty.bitty Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAC0A647289724CD005BD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7X888RRVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "itty.bitty Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blacktree.itty-bitty.Extension";
+				PRODUCT_NAME = "itty.bitty Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAC0A64A289724CD005BD8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7X888RRVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = itty.bitty;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blacktree.itty-bitty";
+				PRODUCT_NAME = itty.bitty;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAC0A64B289724CD005BD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7X888RRVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = itty.bitty;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blacktree.itty-bitty";
+				PRODUCT_NAME = itty.bitty;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAC0A64D289724CD005BD8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/itty.bitty.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7X888RRVJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "itty.bitty Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blacktree.itty-bitty.Extension";
+				PRODUCT_NAME = "itty.bitty Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EAC0A64E289724CD005BD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/itty.bitty.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7X888RRVJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "itty.bitty Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blacktree.itty-bitty.Extension";
+				PRODUCT_NAME = "itty.bitty Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EAC0A651289724CD005BD8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/itty.bitty.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7X888RRVJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = itty.bitty;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blacktree.itty-bitty";
+				PRODUCT_NAME = itty.bitty;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EAC0A652289724CD005BD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/itty.bitty.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7X888RRVJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = itty.bitty;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blacktree.itty-bitty";
+				PRODUCT_NAME = itty.bitty;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAC0A5DD289724CA005BD8CA /* Build configuration list for PBXProject "itty.bitty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC0A643289724CD005BD8CA /* Debug */,
+				EAC0A644289724CD005BD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC0A645289724CD005BD8CA /* Build configuration list for PBXNativeTarget "itty.bitty Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC0A646289724CD005BD8CA /* Debug */,
+				EAC0A647289724CD005BD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC0A649289724CD005BD8CA /* Build configuration list for PBXNativeTarget "itty.bitty (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC0A64A289724CD005BD8CA /* Debug */,
+				EAC0A64B289724CD005BD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC0A64C289724CD005BD8CA /* Build configuration list for PBXNativeTarget "itty.bitty Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC0A64D289724CD005BD8CA /* Debug */,
+				EAC0A64E289724CD005BD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC0A650289724CD005BD8CA /* Build configuration list for PBXNativeTarget "itty.bitty (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC0A651289724CD005BD8CA /* Debug */,
+				EAC0A652289724CD005BD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAC0A5DA289724CA005BD8CA /* Project object */;
+}
