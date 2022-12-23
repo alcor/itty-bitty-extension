@@ -3,12 +3,12 @@
   console.log("Location", document.location.href);
 
   let ib = 'https://itty.bitty.app'
-  ib = "http://localhost:8888"
+  // ib = "http://localhost:8888"
 
   if (location.origin == ib) {
     return location.reload();
   }
-  let redirectToBlob = (blobParts, type, newTab = 0) => {
+  let redirectToBlob = async (blobParts, type, newTab = 0) => {
     f = new FileReader();
     f.onload = function(e) {
       let url = ib + '/#/' + e.target.result;
@@ -17,16 +17,19 @@
     };
     
     let blob = new Blob(blobParts, {type:type + ";compress=true"});
-    if (typeof CompressionStream !== 'undefined') {
-      const compressedStream = blob.stream().pipeThrough(new CompressionStream("deflate"));    
-      new Response(compressedStream).blob().then(b => 
+    try  {
+      if (typeof CompressionStream !== 'undefined') {
+        const compressedStream = blob.stream().pipeThrough(new CompressionStream("deflate"));
+        let b = await new Response(compressedStream).blob();
         f.readAsDataURL(new Blob([b], {type: type + ";format=gz"}))
-      )
-    } else {
-      f.readAsDataURL(blob);
+        return
+      }
+    } catch (e) {
+      console.warn("Error:", e, "Falling back to raw data", blobParts);
     }
+    
+    f.readAsDataURL(blob);
   }
-  
 
   // HTML Selection
   let selection = window.getSelection();
@@ -37,30 +40,33 @@
     return redirectToBlob([tpl.innerHTML], 'text/html;charset=utf-8')
   }
   
-  let findRecipe = (document) => {
+  let findRecipeNode = (r) => {
+    if (r["@type"]?.includes("Recipe") || r.recipeInstructions) return r;
+    r = Array.isArray(r) ? r : r["@graph"]
+    r = r?.find((item)=>item["@type"]?.includes("Recipe"))
+    return r
+  }
+
+  let findLDJsonRecipe = (document) => {
     let lds = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
-      .map(e => e.innerText)
-      .sort((a,b) => a.length - b.length)
+    .map(e => e.innerText)
+    .sort((a,b) => a.length - b.length)
 
-    let r;
     for (const ld of lds) {
-      r = JSON.parse(ld);
-      console.log("TR", r)
-      if (r["@type"] != "Recipe") {
-        r = Array.isArray(r) ? r : r["@graph"]
-        r = r?.find((item)=>item["@type"]=="Recipe")
-      }
+      let r = findRecipeNode(JSON.parse(ld));
       if (!r) continue;
-      console.log("Found Recipe:", r)
-
+      
       delete r.review;
       delete r.video;
-      if (!r.url) r.url = location.href;
-      return r
+      if (!r.mainEntityOfPage) r.mainEntityOfPage = location.href;
+      
+      return r;
     }
   }
   
-  let r = findRecipe(document);
+  let r = findLDJsonRecipe(document);
+  console.log("Found Recipe", r)
+  
   if (r) {
     let type = "application/ld+json;charset=utf-8";
     return redirectToBlob([JSON.stringify(r)], type)

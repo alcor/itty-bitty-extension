@@ -3,5 +3,5 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 chrome.browserAction.onClicked.addListener(function (tab) {
-  chrome.tabs.executeScript(tab.id, { file: 'bitty.js' });
+  chrome.tabs.executeScript(tab.id, { file: 'open_in_bitty.js' });
 });

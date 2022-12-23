@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA5F53662955767A0046EC3C /* open_in_bitty.js in Resources */ = {isa = PBXBuildFile; fileRef = EA5F53652955767A0046EC3C /* open_in_bitty.js */; };
+		EA5F53672955767A0046EC3C /* open_in_bitty.js in Resources */ = {isa = PBXBuildFile; fileRef = EA5F53652955767A0046EC3C /* open_in_bitty.js */; };
 		EAC0A5FA289724CD005BD8CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0A5F9289724CD005BD8CA /* AppDelegate.swift */; };
 		EAC0A5FC289724CD005BD8CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0A5FB289724CD005BD8CA /* SceneDelegate.swift */; };
 		EAC0A5FF289724CD005BD8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5FD289724CD005BD8CA /* LaunchScreen.storyboard */; };
@@ -35,8 +37,6 @@
 		EAC0A638289724CD005BD8CA /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5EC289724CD005BD8CA /* manifest.json */; };
 		EAC0A639289724CD005BD8CA /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5ED289724CD005BD8CA /* background.js */; };
 		EAC0A63A289724CD005BD8CA /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A5ED289724CD005BD8CA /* background.js */; };
-		EAC0A65428973A26005BD8CA /* bitty.js in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A65328973A26005BD8CA /* bitty.js */; };
-		EAC0A65528973A26005BD8CA /* bitty.js in Resources */ = {isa = PBXBuildFile; fileRef = EAC0A65328973A26005BD8CA /* bitty.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA5F53652955767A0046EC3C /* open_in_bitty.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = open_in_bitty.js; path = ../../../chrome/open_in_bitty.js; sourceTree = "<group>"; };
 		EAC0A5E1289724CB005BD8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		EAC0A5E2289724CB005BD8CA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		EAC0A5E3289724CB005BD8CA /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -107,7 +108,6 @@
 		EAC0A61E289724CD005BD8CA /* itty.bitty Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "itty.bitty Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC0A623289724CD005BD8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC0A624289724CD005BD8CA /* itty.bitty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = itty.bitty.entitlements; sourceTree = "<group>"; };
-		EAC0A65328973A26005BD8CA /* bitty.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bitty.js; sourceTree = "<group>"; };
 		EAC0A65728975044005BD8CA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,7 +191,7 @@
 			children = (
 				EAC0A5EB289724CD005BD8CA /* images */,
 				EAC0A5EC289724CD005BD8CA /* manifest.json */,
-				EAC0A65328973A26005BD8CA /* bitty.js */,
+				EA5F53652955767A0046EC3C /* open_in_bitty.js */,
 				EAC0A5ED289724CD005BD8CA /* background.js */,
 			);
 			path = Resources;
@@ -402,7 +402,7 @@
 			files = (
 				EAC0A639289724CD005BD8CA /* background.js in Resources */,
 				EAC0A635289724CD005BD8CA /* images in Resources */,
-				EAC0A65428973A26005BD8CA /* bitty.js in Resources */,
+				EA5F53662955767A0046EC3C /* open_in_bitty.js in Resources */,
 				EAC0A637289724CD005BD8CA /* manifest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,7 +413,7 @@
 			files = (
 				EAC0A63A289724CD005BD8CA /* background.js in Resources */,
 				EAC0A636289724CD005BD8CA /* images in Resources */,
-				EAC0A65528973A26005BD8CA /* bitty.js in Resources */,
+				EA5F53672955767A0046EC3C /* open_in_bitty.js in Resources */,
 				EAC0A638289724CD005BD8CA /* manifest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
