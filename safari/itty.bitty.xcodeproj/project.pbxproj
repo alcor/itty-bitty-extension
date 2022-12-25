@@ -83,6 +83,7 @@
 
 /* Begin PBXFileReference section */
 		EA5F53652955767A0046EC3C /* open_in_bitty.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = open_in_bitty.js; path = ../../../chrome/open_in_bitty.js; sourceTree = "<group>"; };
+		EA5F536829575B0B0046EC3C /* itty.bitty (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "itty.bitty (iOS).entitlements"; sourceTree = "<group>"; };
 		EAC0A5E1289724CB005BD8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		EAC0A5E2289724CB005BD8CA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		EAC0A5E3289724CB005BD8CA /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 		EAC0A5D9289724CA005BD8CA = {
 			isa = PBXGroup;
 			children = (
+				EA5F536829575B0B0046EC3C /* itty.bitty (iOS).entitlements */,
 				EAC0A5DE289724CB005BD8CA /* Shared (App) */,
 				EAC0A5E7289724CD005BD8CA /* Shared (Extension) */,
 				EAC0A5F8289724CD005BD8CA /* iOS (App) */,
@@ -685,6 +687,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "itty.bitty (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A7X888RRVJ;
@@ -723,6 +726,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "itty.bitty (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A7X888RRVJ;

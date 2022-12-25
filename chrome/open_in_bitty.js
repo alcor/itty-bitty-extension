@@ -1,9 +1,9 @@
 
 (async () => {
-  console.log("Location", document.location.href);
+  console.log('Location', document.location.href);
 
   let ib = 'https://itty.bitty.app'
-  // ib = "http://localhost:8888"
+  ib = 'http://localhost:8888'
 
   if (location.origin == ib) {
     return location.reload();
@@ -12,20 +12,20 @@
     f = new FileReader();
     f.onload = function(e) {
       let url = ib + '/#/' + e.target.result;
-      console.log("Forwarding to", url, url.length);
+      console.log('Forwarding to', url, url.length);
       newTab ? window.open(url) : top.location.href = url;
     };
     
-    let blob = new Blob(blobParts, {type:type + ";compress=true"});
+    let blob = new Blob(blobParts, {type:type + ';compress=true'});
     try  {
       if (typeof CompressionStream !== 'undefined') {
-        const compressedStream = blob.stream().pipeThrough(new CompressionStream("deflate"));
+        const compressedStream = blob.stream().pipeThrough(new CompressionStream('deflate'));
         let b = await new Response(compressedStream).blob();
-        f.readAsDataURL(new Blob([b], {type: type + ";format=gz"}))
+        f.readAsDataURL(new Blob([b], {type: type + ';format=gz'}))
         return
       }
     } catch (e) {
-      console.warn("Error:", e, "Falling back to raw data", blobParts);
+      console.warn('Error:', e, 'Falling back to raw data', blobParts);
     }
     
     f.readAsDataURL(blob);
@@ -41,14 +41,14 @@
   }
   
   let findRecipeNode = (r) => {
-    if (r["@type"]?.includes("Recipe") || r.recipeInstructions) return r;
-    r = Array.isArray(r) ? r : r["@graph"]
-    r = r?.find((item)=>item["@type"]?.includes("Recipe"))
+    if (r['@type']?.includes('Recipe') || r.recipeInstructions) return r;
+    r = Array.isArray(r) ? r : r['@graph']
+    r = r?.find((item)=>item['@type']?.includes('Recipe'))
     return r
   }
 
   let findLDJsonRecipe = (document) => {
-    let lds = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+    let lds = Array.from(document.querySelectorAll("script[type='application/ld+json']"))
     .map(e => e.innerText)
     .sort((a,b) => a.length - b.length)
 
@@ -65,15 +65,15 @@
   }
   
   let r = findLDJsonRecipe(document);
-  console.log("Found Recipe", r)
   
   if (r) {
-    let type = "application/ld+json;charset=utf-8";
+    console.log('Found Recipe', r)
+    let type = 'application/ld+json;charset=utf-8';
     return redirectToBlob([JSON.stringify(r)], type)
   } else {
-    // if (!r) return alert("𝗦𝗲𝗻𝗱 𝘁𝗼 𝗶𝘁𝘁𝘆.𝗯𝗶𝘁𝘁𝘆\nWe could not find any standard markup on this page for recipes or other known data types. Try another page or highlight part of this one to send a text clipping.",);
-    // Pass HTML for parsing
-    return redirectToBlob([document.documentElement.outerHTML.substring(0,750000)], "text/raw+html;render=parse;encode=none;charset=utf-8")
+    console.log('Parsing DOM', r)
+    // if (!r) return alert('𝗦𝗲𝗻𝗱 𝘁𝗼 𝗶𝘁𝘁𝘆.𝗯𝗶𝘁𝘁𝘆\nWe could not find any standard markup on this page for recipes or other known data types. Try another page or highlight part of this one to send a text clipping.',);
+    return redirectToBlob([document.documentElement.outerHTML.substring(0,750000)], 'text/raw+html;render=parse;encode=none;charset=utf-8')
   }
 
 })();

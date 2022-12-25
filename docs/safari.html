@@ -1,0 +1,27 @@
+<meta name="viewport" content="width=device-width">
+<style>
+
+
+[data-platform="iPhone"] div#tablet-top {
+  background-color: red;
+}
+
+body {display:flex; width:100vw; height:100vh;}
+img {margin:auto}
+</style>
+
+<img src="safari-howto.svg" >
+
+<script>
+  let ua = navigator.userAgent;
+
+var b = document.documentElement;
+b.setAttribute('data-useragent',  navigator.userAgent);
+b.setAttribute('data-platform', navigator.platform );
+
+let mobile = ua.match(/Mobile/i) 
+
+setTimeout(document.write("top", getComputedStyle(document.documentElement).getPropertyValue("--sab"))
+document.write("top:", window.screen.height - window.innerHeight)
+;
+</script>
