@@ -3,7 +3,7 @@
   console.log('Location', document.location.href);
 
   let ib = 'https://itty.bitty.app'
-  ib = 'http://localhost:8888'
+  // ib = 'http://localhost:8888'
 
   if (location.origin == ib) {
     return location.reload();
